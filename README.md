@@ -4,11 +4,12 @@
 This repository contains a Python implementation of the 2D-dynamical mean-field Ising model, inspired by the paper by Smug, Sornette, and Ashwin (2018): *"A Generalized 2D-Dynamical Mean-Field Ising Model with a Rich Set of Bifurcations (Inspired and Applied to Financial Crises)."*
 
 The model translates the classical physical representation of spins into traders' opinion dynamics, capturing the interplay between instantaneous social imitation and past market trends.
+The model explores how traders' opinion can lead to financial crises, chaotic regimes, and critical transitions.
 
 ## Model Features & Implementation
 * **2D-Dynamical Map (`Isingmap.py`):** Implementation of the discrete-time 2D map to simulate the endogenized external field and traders' opinion evolution over time.
-* **Lyapunov Exponents & Chaos (`Isinglyapunov.py`):** Procedural scripts developed to compute Lyapunov exponents and identify chaotic regimes and bifurcations.
-* **Critical Analysis on Chaotic Regimes:** The simulation successfully replicates the core dynamics of the paper. However, as inherently expected in complex systems with a rich set of bifurcations, reproducing the exact visual phase space in highly chaotic parameter regimes (e.g., paper's Fig. 8b) highlights the extreme sensitivity to numerical precision and initial conditions.
+* **Lyapunov Exponents & Chaos (`Isinglyapunov.py`):** Numerical scripts developed to compute the Lyapunov exponents, aiming to identify the boundaries of chaotic regimes and bifurcation points.
+* **Critical Analysis on Chaotic Regimes:** The code successfully implements the core mathematical framework. The project also highlights the standard numerical challenges in exactly reproducing specific bifurcation phase spaces (e.g., the paper's Fig. 8b), often due to undocumented grid resolutions, transient discard times, or specific numerical setups in the original literature.
 
 ## Tech Stack
 * **Language:** Python.
