@@ -1,0 +1,1 @@
+# financial_markets_ising_model_paper_sornette_smug_2018
